@@ -1,0 +1,198 @@
+#hero {
+    width: 100%;
+    height: var(--hero-height);
+    position: relative;
+    /*background-image: url("../img.png");*/
+    background-image: url("../images/background3.jpg");
+    background-size: cover;
+}
+
+#hero::after {
+    content: "";
+    position: absolute;
+    background: var(--hero-overlay-gradient);
+    width: 100%;
+    height: inherit;
+}
+
+
+.hero-content {
+    position: absolute;
+    font-family: Street2, sans-serif;
+    bottom: 100px;
+    width: 40%;
+    margin-left: 50px;
+    color: white;
+    z-index: 2;
+}
+
+
+.hero-title {
+    font-size: 4vw;
+    line-height: 4vw;
+    padding-bottom: .6vw;
+}
+
+.movie-logo {
+    width: 30vw;
+}
+
+.hero-stats {
+    font-size: .9vw;
+    justify-content: space-between;
+    opacity: .8;
+    font-family: Helvetica, sans-serif;
+}
+
+img.rating-icon {
+    width: 1.7vw;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.hero-description {
+    font-family: Street2, sans-serif;
+    font-size: 1.2vw;
+    line-height: normal;
+    margin: 0;
+}
+
+.hero-buttons {
+    display: flex;
+    margin: 15px 0;
+}
+
+.hero-button {
+    background-color: rgba(140, 151, 187, 0.42);
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    min-height: auto;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    border: 3px solid transparent;
+    padding: 9px 24px;
+    margin-right:2vw;
+    font-family: Street2b, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.hero-button-details:hover {
+    background-color: rgba(140, 151, 187, 0.36);
+}
+
+.hero-button-rent {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: rgb(32, 32, 49);
+}
+
+.hero-button-unavailable, .hero-button-rented {
+    background-color: rgba(180, 180, 180, 0.95);
+    color: rgb(32, 32, 49);
+    opacity: 0.9;
+    cursor: not-allowed;
+}
+
+.play-icon {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.info-icon {
+    width: 23px;
+    margin-right: 10px;
+}
+
+.details-section {
+    /*max-width: 45vw;*/
+    /*margin-left: 30px;*/
+    position: relative;
+    top: -75px;
+}
+
+.details-section:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
+    width: 100%;
+    height: 350px;
+}
+
+.movie-details {
+    max-width: 45vw;
+    margin-left: 45px;
+}
+
+.movie-description {
+    font-family: Street2, sans-serif;
+    font-size: 16px;
+    line-height: 1.5vw;
+    font-weight: 400;
+}
+
+.movie-genres, .movie-crew {
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    margin: 3px 0;
+}
+
+
+.movie-description-category {
+    font-family: Street2b, sans-serif;
+    color: rgb(178, 182, 192);
+}
+
+
+.watchlist-button {
+    position: relative;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.3);
+    border: none;
+    outline: 2px solid rgba(137, 137, 137, 0.88);
+}
+
+.watchlist-icon {
+    width: 100%;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.watchlist-tooltip {
+    position: absolute;
+    padding: 7px;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    background: rgba(241, 241, 241, 0.93);
+    color: #282828;
+    font-family: Street2b, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0;
+    border-radius: 2px;
+    transition: opacity .3s ease-in-out;
+    box-shadow: 2px 3px 5px rgba(0,0,0,0.3);
+    pointer-events: none;
+}
+
+.watchlist-button:hover .watchlist-tooltip {
+    opacity: 1;
+}
+
+.watchlist-button:hover {
+    outline: 2px solid rgba(255, 255, 255, 0.9);
+    background: rgba(89, 89, 89, 0.38);
+
+}
+

@@ -1,0 +1,135 @@
+.rental-page-header {
+    margin-top: 150px;
+}
+
+.rental-page-heading {
+    text-align: center;
+}
+
+.rental-empty {
+    text-align: center;
+    font-family: Street2, sans-serif;
+    font-size: 18px;
+    line-height: 19px;
+    margin: 100px 0;
+}
+
+.rental-empty-heading {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 20px;
+}
+
+
+.rental-section {
+    width: calc(((100vw - 260px) / 8) * 6 + 60px);
+    max-width: 800px;
+    margin: 0 auto 100px;
+}
+.rental-category {
+    margin: 30px 0;
+}
+
+.rental-list-header {
+    font-family: Street2b, sans-serif;
+    font-size: 18px;
+    line-height: 19px;
+}
+
+.rental-list {
+    border-collapse: separate;
+    border-radius: 8px;
+    background: hsla(0,0%,87%,.06);
+    padding: 0;
+}
+
+.rental-list-item {
+    list-style: none;
+    display: flex;
+}
+
+.rental-list-poster {
+    height: 120px;
+    margin-right: 25px;
+}
+
+.rental-list-poster > a > img {
+    height: 100%;
+}
+
+.rental-list-item:first-child > .rental-list-poster > a > img {
+    border-top-left-radius: 8px;
+}
+
+.rental-list-item:last-child > .rental-list-poster > a > img {
+    border-bottom-left-radius: 8px;
+}
+
+.rental-list-item-content {
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.rental-list-item:not(:last-child) {
+    border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
+.item-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 0 7px;
+    width: 100%;
+}
+
+.item-row > div {
+    flex: 3;
+}
+
+.item-row > div:last-child {
+    flex: 1;
+    text-align: right;
+}
+
+.rental-list-item-info {
+    font-family: Street2B, sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.rental-list-item-action {
+    font-size: 16px;
+}
+
+.return-button {
+    background-color: hsla(0,0%,100%,.12);
+    justify-content: center;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    border: 3px solid transparent;
+    font-family: Street2b, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    transition: 200ms ease-out;
+}
+
+.return-button:hover {
+    
+    background-color: rgba(134, 151, 206, 0.25);
+}
+
+body {
+    background-size: 100% 100%;
+    background-position: 0;
+    background-image:
+    radial-gradient(190% 75% at 0% 150%, rgba(30, 59, 103, 0.53) 0%, #161C4D00 100%),
+            radial-gradient(78% 30% at 65% 21%, #061048 0%, #09114900 100%),
+    linear-gradient(0deg, #060217FF 30%, #08103f 90%)!important;
+}

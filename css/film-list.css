@@ -1,0 +1,72 @@
+section ~ .film-section {
+    position: relative;
+    top:-50px;
+}
+section ~ .film-section:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
+    width: 100%;
+    height: 500px;
+}
+
+.extra-margin-top {
+    margin-top: 150px;
+}
+
+.film-page-header {
+    font-size: 44px;
+    font-family: Street2, sans-serif;
+    opacity: 0.9;
+    padding: 150px 0 50px 50px;
+    margin: 0;
+
+}
+
+.film-row-header {
+    font-size: 16px;
+    font-family: Street2, sans-serif;
+    margin: 10px 0;
+}
+
+.film-row {
+    margin: 0 40px;
+}
+
+.film-section-header {
+    font-size: 16px;
+    position: relative;
+    z-index: 2;
+}
+
+ul.film-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 15px;
+}
+
+.film-item {
+    margin-right: 33px;
+    padding: 1px;
+    outline: 4px solid transparent;
+    transition:  0.2s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+
+.film-item > a > img {
+    width: calc((100vw)/7 - 46px);
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0 40px 58px -16px, rgba(0, 0, 0, 0.72) 0 30px 22px -10px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0 20px 25px -8px, rgba(0, 0, 0, 0.72) 0 15px 11px -5px;
+}
+
+.film-item:hover {
+    outline: 4px solid white;
+    transform: scale(1.1);
+    z-index: 1;
+}

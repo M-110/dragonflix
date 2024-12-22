@@ -1,0 +1,144 @@
+.profile-page-header {
+    margin-bottom: 30px;
+}
+
+.profile-page-heading {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.profile-page-section {
+    width: calc(((100vw - 260px) / 2));
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.profile-container {
+    border-collapse: separate;
+    border-radius: 8px;
+    background: hsla(0,0%,87%,.06);
+    padding: 0;
+}
+
+.profile-info-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.profile-info-item:not(:last-child) {
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
+.profile-info-item {
+    padding: 25px;
+}
+
+.profile-info-label {
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.profile-info-content {
+    font-family: Street2, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+.change-button {
+    background-color: rgba(255, 255, 255, 0.86);
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    min-height: auto;
+    border-radius: 8px;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    border: 3px solid transparent;
+    padding: 9px 24px;
+    font-family: Street2b, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 20px auto;
+}
+
+.profile-user-list-header {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+    padding: 30px 0 0 45px;
+}
+
+.profile-user-list {
+    background-color: rgb(7, 7, 28);
+    margin: 30px 40px;
+    padding: 5px;
+    list-style: none;
+    border-radius: 4px;
+    height: 350px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    user-select: none;
+    cursor: pointer;
+}
+
+.profile-user-item {
+    font-size: 14px;
+    font-family: Street2, sans-serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 9px 20px;
+    list-style: none;
+    transition: background-color 150ms ease-out;
+    margin: 5px 3px;
+    border-radius: 4px;
+}
+
+.profile-user-item.selected {
+    background-color: rgb(74, 84, 127);
+}
+
+.profile-user-item:not(.selected):hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.profile-user-id {
+    width: 40px;
+}
+
+.profile-user-name {
+}
+
+.profile-selected-icon {
+    margin-left: auto;
+}
+
+/*.profile-user-list::-webkit-scrollbar {*/
+/*    width: 15px;*/
+/*    background-color: rgba(0,0,0,0);*/
+/*}*/
+
+/*.profile-user-list::-webkit-scrollbar-track {*/
+/*    background-color: rgba(0,0,0,0);*/
+/*}*/
+
+/*.profile-user-list::-webkit-scrollbar-thumb {*/
+/*    background-color: rgb(76, 80, 102);*/
+/*}*/
+
+/*.profile-user-list::-webkit-scrollbar-thumb:hover {*/
+/*    background-color: rgb(76, 84, 107);*/
+/*}*/
+
+.profile-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 130px 25px;
+}
